@@ -120,7 +120,6 @@ def main(_):
             with tf.gfile.GFile(filename, "rb") as f:
                 image = f.read()
             captions = generator.beam_search(sess, image)
-            # print("Captions for image %s:" % os.path.basename(filename))
             for i, caption in enumerate(captions):
                 # Ignore begin and end words.
                 sentence = [vocab.id_to_word(w) for w in caption.sentence[1:-1]]
