@@ -2,13 +2,13 @@ import os
 from library import caption_run as app
 
 # --------------- configuration start here --------------------------------------------------------------------------
-# Location to saved the Evaluation TF records.
-DATA_DIR = "path/to/tf/files"
+# Path to directory containing the saved evaluate TF files
+DATA_DIR = "path/to/dir/tf_files"
 
-# Path to the directory of model files to evaluate.
+# Directory containing model files to evaluate.
 MODEL_DIR = "path/to/the/model"
 
-# Select gpu device to train your model, use integer number to refer to the device: e.g. 0 -> gpu_0
+# Select gpu device to evaluate your model, use integer number to refer to the device: e.g. 0 -> gpu_0
 GPU_DEVICE = 0
 
 # -------------------configuration end here-----------------------------------------------------------------------

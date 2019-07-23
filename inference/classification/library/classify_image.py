@@ -298,7 +298,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--checkpoint_path',
       type=str,
-      default='/nfs/lyrasis/models/label/v3/classify_image_graph_def.pb',
+      default='',
       help="""\
       Path to classify_image_graph_def.pb,
       imagenet_synset_to_human_label_map.txt, and
@@ -308,7 +308,7 @@ if __name__ == '__main__':
   parser.add_argument(
     '--vocab_dir',
     type=str,
-    default='/nfs/lyrasis/models/label/v3/',
+    default='',
     help="""\
        Path to classify_image_graph_def.pb,
        imagenet_synset_to_human_label_map.txt, and
@@ -318,7 +318,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--output_path',
       type=str,
-      default='../output/classification.json',
+      default='',
       help='Absolute path to output file.'
   )
   parser.add_argument(

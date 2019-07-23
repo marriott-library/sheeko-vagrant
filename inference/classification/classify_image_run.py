@@ -9,32 +9,35 @@ from library import classify_run as app
 # lists the available checkpoints in the directory. It will not work if you
 # point to a directory with just a copy of a model checkpoint: in that case,
 # you will need to pass the checkpoint path explicitly.
-# Path to classify_image_graph_def.pb
-CHECKPOINT_PATH = "../../pretrained_models/labels/classification/classify_image_graph_def.pb"
+
+# Path to pretrained model graph.pb file
+CHECKPOINT_PATH = "path/to/dir/pretrained_model/graph.pb"
 
 # Path to vocabulary directory that containing pbtxt and txt dictionary file.
-VOCAB_DIR = "../../pretrained_models/labels/classification/"
+VOCAB_DIR = "path/to/dir/pretrained_model/"
 
-# List of paths to JPEG image file to caption. It's no longer needed since image_dir is used to grab all images inside to generate the captions, for legacy testing, please go to research/im2tx test_model.py
-IMAGE_DIR_LIST = ["../test/"]
+# List of paths to JPEG image files to labels
+# The script will grab all JPEG in specified directories. 
+# No need to mention files individually. 
+# This will only grab images place directly in the directories. It will not go into child dirs.
+IMAGE_DIR_LIST = ["path/to/dir/"]
 
+# Uncomment the following section if you want the script to traverse all child dirs under a given dir. 
 '''
 # Example of looping all dirs under given path
-IMAGE_DIR_LIST = []
-DATA_DIR = 'caption'
+DATA_DIR = '/path/to/the_master_dir'
 
 for dir in os.listdir(os.path.abspath(DATA_DIR)):
     if os.path.isdir(os.path.abspath(os.path.join(os.path.abspath(DATA_DIR),dir))):
         DATA_DIR_LIST.append(DATA_DIR + '/' + dir)
 '''
 
-
-# specify destination of path to output json file
-OUTPUT_PATH = "../test/classifications.json"
+# Path to output json file
+OUTPUT_PATH = "path/to/output/classifications.json"
 
 # -------------------configuration end here-----------------------------------------------------------------------
 
-# Run inference to generate captions.
+# Run inference to generate labels
 app.run(CHECKPOINT_PATH, VOCAB_DIR, IMAGE_DIR_LIST, OUTPUT_PATH)
 
 print("Classified Label Generating Completed!")

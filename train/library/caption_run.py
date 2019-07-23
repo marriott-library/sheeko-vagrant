@@ -1,6 +1,17 @@
 import os
 
 def run(DATA_DIR, INCEPTION_CHECKPOINT, MODEL_DIR, TRAIN_STEPS, GPU_DEVICE = 0, VOCAB_FILE=""):
+    '''
+    :param DATA_DIR: str, Path to the directory containing TF Records files
+    :param INCEPTION_CHECKPOINT: str, Path to the directory containing the checkpoint file
+    :param MODEL_DIR: str, Path to directory saving or restoring model file
+    :param TRAIN_STEPS: int, Number of steps for the training
+    :param GPU_DEVICE: int, Index of the gpu device to use for the training
+        Run "from tensorflow.python.client import device_lib
+        device_lib.list_local_devices()"
+    :param VOCAB_FILE: str, Path to the directory containing vocabulary dictionary file
+    :return:
+    '''
     # specify the path to library train.py
     CODE_PATH = "../library"
 

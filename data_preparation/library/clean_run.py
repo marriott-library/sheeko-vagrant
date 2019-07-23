@@ -2,9 +2,10 @@ import os
 # run data clean script
 def run(DATA_DIR_LIST, OUTPUT_PATH, FIELD_NM):
     '''
-    :param DATA_DIR_LIST: list of dirs containing annotation json files
-    :param OUTPUT_PATH: path to destination of cleaned annotation json files
-    :param FIELD_NM: field name in annotation file containing metadata for the data cleaning
+    
+    :param DATA_DIR_LIST: list, List of paths to directories containing annotation json files
+    :param OUTPUT_PATH: str, Path to output directory
+    :param FIELD_NM: str, Field name in annotation file containing metadata
     :return:
     '''
     # specify the path to library clean_data.py
@@ -16,7 +17,7 @@ def run(DATA_DIR_LIST, OUTPUT_PATH, FIELD_NM):
     DATA_STR = ""
     for data in DATA_DIR_LIST:
         DATA_STR += data + " "
-
+   
     OUTPUT_PATH = os.path.abspath(OUTPUT_PATH)
 
     # Run data cleaning.

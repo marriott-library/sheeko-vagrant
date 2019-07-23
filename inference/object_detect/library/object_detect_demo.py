@@ -9,7 +9,7 @@ import time
 from distutils.version import StrictVersion
 from collections import defaultdict
 from io import StringIO
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 from PIL import Image
 from os import listdir
 from os.path import isfile, join
@@ -78,7 +78,7 @@ def load_image_into_numpy_array(image):
         (im_height, im_width, 3)).astype(np.uint8)
 
 
-from object_detection.utils import visualization_utils as vis_util
+# from object_detection.utils import visualization_utils as vis_util
 
 # Size, in inches, of the output images.
 IMAGE_SIZE = (4, 4)
@@ -147,7 +147,7 @@ def run_inference_for_single_image(image, graph):
                 output_dict['num_detections']))
             print([result for result in results])
             print('close the image to continue')
-
+            '''
             vis_util.visualize_boxes_and_labels_on_image_array(
                 image_np,
                 output_dict['detection_boxes'],
@@ -160,6 +160,7 @@ def run_inference_for_single_image(image, graph):
             plt.figure(figsize=IMAGE_SIZE)
             plt.imshow(image_np)
             plt.show()
+            '''
             return output_dict
 
 

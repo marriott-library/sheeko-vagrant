@@ -44,8 +44,6 @@ import tarfile
 import numpy as np
 from six.moves import urllib
 import tensorflow as tf
-import tkinter as tk
-from tkinter import filedialog
 
 import json
 from os import listdir
@@ -245,7 +243,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--checkpoint_path',
       type=str,
-      default='/nfs/lyrasis/models/label/v3/',
+      default='',
       help="""\
       Path to classify_image_graph_def.pb,
       imagenet_synset_to_human_label_map.txt, and
@@ -255,7 +253,7 @@ if __name__ == '__main__':
   parser.add_argument(
     '--vocab_dir',
     type=str,
-    default='/nfs/lyrasis/models/label/v3/',
+    default='',
     help="""\
        Path to classify_image_graph_def.pb,
        imagenet_synset_to_human_label_map.txt, and

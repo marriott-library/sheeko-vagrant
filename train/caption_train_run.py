@@ -2,17 +2,17 @@ import os
 from library import caption_run as app
 
 # --------------- configuration start here --------------------------------------------------------------------------
-# Location to the saved training TF files.
-DATA_DIR = "/path/to/tf/files"
+# Path to directory containing the saved training TF files
+DATA_DIR = "path/to/dir/tf_files"
 
 # Path to dictionary file generated through TF build script
-VOCAB_FILE = "/path/to/vocab"
+VOCAB_FILE = "path/to/dir/word_count.txt"
 
-# Path to dir of the Inception checkpoint file.
-INCEPTION_CHECKPOINT = "/path/to/inception_v3.ckpt"
+# Path to Inception checkpoint file.
+INCEPTION_CHECKPOINT = "path/to/inception_v3.ckpt"
 
 # Directory to save or restore the training process of trained model.
-MODEL_DIR = "/path/to/models"
+MODEL_DIR = "path/to/model"
 
 # Number of Steps to train
 TRAIN_STEPS = 100

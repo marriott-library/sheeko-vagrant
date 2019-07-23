@@ -156,8 +156,6 @@ def run_inference_for_all_images(filenames, graph):
                 image_np_expanded = np.expand_dims(image_np, axis=0)
                 # Actual detection.
                 output_dict = run_inference_for_single_image(image_np, sess)
-                # Visualization of the results of a detection.
-                #   print(output_dict['detection_scores'])
                 print('handling %s' % os.path.basename(filename))
                 object_count = 0
                 for i in range(output_dict['num_detections']):
@@ -175,10 +173,8 @@ def run_inference_for_all_images(filenames, graph):
                         results.append({'label_text': label, 'score': str(score)})
                         print(label)
                         labels.append(label)
-                # print([label for label in results])
                 image_object["labels"] = results
                 caption_object.append(image_object)
-                # print('%d images in caption object' % len(caption_object))
                 print('%d objects found in the given image: %s' % (
                     object_count, os.path.basename(filename)))
                 file_num += 1

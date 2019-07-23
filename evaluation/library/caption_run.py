@@ -2,7 +2,15 @@ import os
 
 
 def run(DATA_DIR, MODEL_DIR, GPU_DEVICE=0):
-    # specify the path to library train.py
+    '''
+    :param DATA_DIR: str, Path to the directory containing TF Records files
+    :param MODEL_DIR: str, Path to directory containing model file
+    :param GPU_DEVICE: int, Index of the gpu device to use for the evaluation
+        Run "from tensorflow.python.client import device_lib
+        device_lib.list_local_devices()"
+    :return:
+    '''
+    # Path to library evaluate.py
     CODE_PATH = "../library"
 
     DATA_DIR = os.path.abspath(DATA_DIR)

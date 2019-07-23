@@ -1,17 +1,17 @@
 import os
-# run data clean script
+# run data build script
 def run(IMAGE_DIR_LIST, CAPTION_DIR_LIST, OUTPUT_PATH, FIELD_NM, FIELD_ID,SEG_METHOD, TRAIN_PERCENT):
     '''
-    :param IMAGE_DIR_LIST: list of paths to image dirs
-    :param CAPTION_DIR_LIST: list of paths to caption dirs
-    :param OUTPUT_PATH: str, path to destination of cleaned annotation json files
-    :param FIELD_NM: str, field name in annotation file containing metadata for the data cleaning
-    :param FIELD_ID: str, field name in annotation file containing metadata for the data cleaning
-    :param SEG_METHOD: str, either seg_by_image or seg_by_dir
+    :param IMAGE_DIR_LIST: list, List of paths to directories containing JPEG image files
+    :param CAPTION_DIR_LIST: list, List of paths to directories containing annotation files
+    :param OUTPUT_PATH: str, Path to output directory
+    :param FIELD_NM: str, Field name in annotation file containing metadata
+    :param FIELD_ID: str, Field name in annotation file containing image file name
+    :param SEG_METHOD: str, seg_by_image or seg_by_dir
     :param TRAIN_PERCENT: int, percentage of training in the data set
     :return:
     '''
-    # specify the path to library clean_data.py
+    # specify the path to library build_data.py
     CODE_PATH = "library"
 
     for i in range(len(IMAGE_DIR_LIST)):

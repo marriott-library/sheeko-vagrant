@@ -1,12 +1,11 @@
 import os
 
-
 def run(CHECKPOINT_PATH, VOCAB_FILE, IMAGE_DIR_LIST, OUTPUT_PATH):
     '''
-    :param CHECKPOINT_PATH:
-    :param VOCAB_FILE:
-    :param IMAGE_DIR_LIST:
-    :param OUTPUT_PATH:
+    :param CHECKPOINT_PATH: str, Path to graph.pb file
+    :param VOCAB_FILE: str, Path to the directory containing pbtxt dictionary file
+    :param IMAGE_DIR_LIST: list, List of paths to directories containing JPEG image file to labels.
+    :param OUTPUT_PATH: str, Path to output json file
     :return:
     '''
     # specify the path to library inference code

@@ -7,17 +7,17 @@ sys.path.append('.')
 from library import TF_run as app
 
 # --------------- configuration start here --------------------------------------------------------------------------
-# path to training set images
+# Path to directory containing training set images
 TRAIN_SET_IMAGE = "path/to/train/images"
-# path to testing set images
+# Path to directory containing testing set images
 TEST_SET_IMAGE = "path/to/test/images"
-# path to training set caption file
-TRAIN_SET_CAPTION = "path/to/train/captions"
-# path to testing set caption file
-TEST_SET_CAPTION = "path/to/test/captions"
+# Path to training set annotation file
+TRAIN_SET_CAPTION = "path/to/train/annotations.json"
+# Path to testing set annotation file
+TEST_SET_CAPTION = "path/to/test/annotations.json"
 
-# output path, dictionary file with be included within output path
-OUTPUT_PATH = "/path/to/save/the/output"
+# Path to output directory
+OUTPUT_PATH = "path/to/save/the/output"
 # optional, shard number
 # SHARD_NUM = 256
 # -------------------configuration end here-----------------------------------------------------------------------

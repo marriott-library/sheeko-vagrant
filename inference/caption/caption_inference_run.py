@@ -18,7 +18,7 @@ CHECKPOINT_PATH="path/to/dir/pretrained_model"
 VOCAB_FILE = "path/to/dir/pretrained_model/word_count.txt"
 
 
-# List of paths to directories containing JPEG image file to caption. 
+# List of paths to directories containing JPEG image files to caption. 
 # The script will grab all JPEG in specified directories. 
 # No need to mention files individually. 
 # This will only grab images place directly in the directories. It will not go into child dirs.
@@ -40,7 +40,7 @@ OUTPUT_PATH = "path/to/output/captions.json"
 
 # -------------------configuration end here-----------------------------------------------------------------------
 
-# Run inference to generate captions.
+# Run inference to generate captions
 app.run(CHECKPOINT_PATH, VOCAB_FILE, IMAGE_DIR_LIST, OUTPUT_PATH)
 
 print("Caption Generating Completed!")

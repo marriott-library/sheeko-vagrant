@@ -7,26 +7,25 @@ sys.path.append('.')
 from library import clean_run as app
 
 # --------------- configuration start here --------------------------------------------------------------------------
-# specify field name in annotation file containing metadata
+# Field name in annotation file containing metadata
 FIELD_NM = "description_t"
 
-# specify list of paths of dirs that contains the meta data that needs cleaning (could be either relative or absolute path)
+# List of paths (relative or absolute)of directories containing the meta data that needs cleaning
 # This will perform NLP cleaning and remove proper-nouns
-DATA_DIR_LIST = ['']
+DATA_DIR_LIST = ['/path/to/captions']
 
 # Uncomment the following section to traverse through all child dirs of a given dir
 '''
 # Example of looping all dirs under given path
-DATA_DIR_LIST = []
-DATA_DIR = 'caption'
+DATA_DIR = '/path/to/the_master_dir'
 
 for dir in os.listdir(os.path.abspath(DATA_DIR)):
     if os.path.isdir(os.path.abspath(os.path.join(os.path.abspath(DATA_DIR),dir))):
         DATA_DIR_LIST.append(DATA_DIR + '/' + dir)
 '''
 
-# specify destination of output dir
-OUTPUT_PATH = ""
+# Path to output directory
+OUTPUT_PATH = "path/to/save/the/output"
 
 # -------------------configuration end here-----------------------------------------------------------------------
 
