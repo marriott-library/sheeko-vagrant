@@ -28,7 +28,7 @@ Machine learning implementation package to generate descriptive metadata for dig
 
 
 
-## Project Overview
+## PROJECT OVERVIEW
 
 This project provides deployable machine learning environment including pre-trained models and code packages for training, inference and evaluation for generating caption metadata. Inference codes for label generating (classification, object detect) are also included in this project.
 
@@ -63,7 +63,7 @@ Architecture of Caption generating model in this project is ["Show and Tell mode
 <p align="center"><img src="show_and_tell.jpg" height="300" width="650"> </p>
 
 
-## Getting Started
+## GETTING STARTED
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
@@ -186,7 +186,7 @@ python -c 'import nltk; print(nltk.__version__)'
 ```
 Version of the nltk will be printed as result if successfully installed
 
-## How to Use
+## HOW TO USE
 
 ### Execute script
 This code package is executed through Command Line. To run the script, you need to navigate to the directory of the script then run the script using "python script_name.py".
@@ -257,7 +257,7 @@ run **build_data_run.py** under **Windows OS** with the updated configuration an
 "Not Found" error.
 
 
-## Walkthrough
+## WALKTHROUGH
 
 <h3>What's included in the package</h3>
 <ul>
@@ -774,7 +774,7 @@ python caption_eval_run.py
 ```
 
 
-## Data Preparation
+## DATA PREPARATION
 Data from any source for caption generating model need following the required pattern.
 
 Both images files in JPEG format and descriptive annotation files in json format are required.
@@ -906,7 +906,7 @@ Run build_data_run.py
 To make data runnable by training script, data need to be converted into TF Record format. Each TF record represents serial pairs of encoded image-caption data. Please see [Convert Data into TF Records](#Convert-Data-into-TF-Records) in Walkthrough section to see details.
 
    
-## Training a Model
+## TRAINING A MODEL
 Our code package provides the code to train your customized model for generating captions. 
 
 ### Keys to get a good model
@@ -926,7 +926,7 @@ To run the training, an Inception model is required. You could download [Incepti
 You could transfer your training with new dataset. The output will follow the new dataset's pattern. Convert new dataset into TF Records
 then replace the **DATA_DIR** with the TF Records' path.
 
-## Inference
+## INFERENCE
 
 ### Image Caption
 Caption model translates given JPEG image into natural language text. 
@@ -941,7 +941,7 @@ Object Detection model identifies the objects in the given JPEG image. You could
 
 Please see [Inference Walkthrough](#Inference-Walkthrough) for code walkthrough
 
-## Evaluation Caption Model
+## EVALUATION CAPTION MODEL
 Code package provides evaluation script for caption model. 
 
 ### Metric
@@ -955,7 +955,7 @@ Go to [Evaluation Walkthrough](#Run-Evaluation) for code walkthrough
 
 
 
-## Sheeko Pretrained Models Resource
+## SHEEKO PRETRAINED MODELS RESOURCE
 This project provides [Sheeko Pretrained Models Resource](https://sheeko.org/pre-trained-models/) for generating captions.
 Models with description are available for downloading. It's highly recommended to try the downloaded model in [Inference Walkthrough](#Inference-Walkthrough) to test the performance.
 
