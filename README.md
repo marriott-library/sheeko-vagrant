@@ -60,7 +60,7 @@ This code package is the customization of Im2txt. Please see https://github.com/
 Architecture of Caption generating model in this project is ["Show and Tell model"](http://arxiv.org/abs/1609.06647) which is an encoder-decoder neural network.
 
 
-<p align="center"><img src="show_and_tell.JPG" height="300" width="650"> </p>
+<p align="center"><img src="show_and_tell.jpg" height="300" width="650"> </p>
 
 
 ## Getting Started
