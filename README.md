@@ -19,11 +19,11 @@ Machine learning implementation package to generate descriptive metadata for dig
 * [Training a Model](#training-a-model)
     * [Initial Training For Caption Model](#initial-training)
     * [Fine Tune Caption Model With Pretrained Model](#fine-tune-the-im2txt-model)
-* [Evaluate your Caption Model](#Evaluation-Caption-Model)
 * [Inference](#Inference)
     * [Image Caption](#Image-Caption)
     * [Image Classification](#Image-Classification)
     * [Object Detection](#Object-Detection)
+* [Evaluate your Caption Model](#Evaluation-Caption-Model)
 * [Pretrained Models](#Sheeko-Pretrained-Models-Resource) 
 
 
@@ -926,16 +926,6 @@ To run the training, an Inception model is required. You could download [Incepti
 You could transfer your training with new dataset. The output will follow the new dataset's pattern. Convert new dataset into TF Records
 then replace the **DATA_DIR** with the TF Records' path.
 
-## Evaluation Caption Model
-Code package provides evaluation script for caption model. 
-
-### Metric
-Caption model is Natural-language generation model(NLG model). 
-For NLG model, we use [metrics](https://medium.com/explorations-in-language-and-learning/metrics-for-nlg-evaluation-c89b6a781054) 
- measure performance.
- 
-In our code package we use [perplexity](https://en.wikipedia.org/wiki/Perplexity)
-
 ## Inference
 
 ### Image Caption
@@ -949,10 +939,25 @@ You could find more information about [image classification models](https://gith
 ### Object Detection
 Object Detection model identifies the objects in the given JPEG image. You could find models [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 
+Please see [Inference Walkthrough](#Inference-Walkthrough) for code walkthrough
+
+## Evaluation Caption Model
+Code package provides evaluation script for caption model. 
+
+### Metric
+Caption model is Natural-language generation model(NLG model). 
+For NLG model, see [metrics](https://medium.com/explorations-in-language-and-learning/metrics-for-nlg-evaluation-c89b6a781054) 
+ to measure performance.
+ 
+In our code package we use [perplexity](https://en.wikipedia.org/wiki/Perplexity) as our metric to measure model's performance
+
+Go to [Evaluation Walkthrough](#Run-Evaluation) for code walkthrough
+
+
 
 ## Sheeko Pretrained Models Resource
 This project provides [Sheeko Pretrained Models Resource](https://sheeko.org/pre-trained-models/) for generating captions.
-Models with description are available for downloading. It's highly recommended to try the downloaded model in [Inference](#Inference) to test the performance.
+Models with description are available for downloading. It's highly recommended to try the downloaded model in [Inference Walkthrough](#Inference-Walkthrough) to test the performance.
 
 
 
