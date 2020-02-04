@@ -61,7 +61,8 @@ Architecture of Caption generating model in this project is ["Show and Tell mode
 
 
 <p align="center"><img src="show_and_tell.jpg" height="300" width="650"> </p>
-<p>Demo Image is from [COCO](http://cocodataset.org)</p>
+
+Demo Image is from [COCO](http://cocodataset.org)
 
 ## GETTING STARTED
 
