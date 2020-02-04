@@ -108,6 +108,8 @@ You could deploy the project in both ways so you could get best performance in a
 
 ### Installation
 
+Download this code package as ZIP under project dir and unzip the file package.
+
 #### To Install Locally
 
 It's recommened to run the code in **Ubuntu 16.04.6 LTS OS or Windows OS environment**. 
