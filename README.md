@@ -101,7 +101,6 @@ You could deploy the project in both ways so you could get best performance in a
 #### To deploy in Virtualbox
 
 <ul>
-   <li>NVIDIA GPU and NVIDIA Driver installed</li>
    <li><p>Virtualbox Installed</p></li>
    <li><p>vt-x enabled</p></li>
    <li><p>Vagrant Installed</p></li>
