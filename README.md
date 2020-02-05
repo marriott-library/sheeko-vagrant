@@ -87,7 +87,7 @@ You could deploy the project in both ways so you could get best performance in a
 <li><p>Ubuntu 16.04.6 LTS OS environment or Windows OS</p></li>
 <li><p>NVIDIA GPU and NVIDIA Driver installed</p></li>
 <li><p>Python 2.7 or Python 3</p></li>
-<li><p>Tensorflow (For GPU version, please see https://www.tensorflow.org/install/gpu to install cuda related packages)</p></li>
+<li><p>Tensorflow 1.11 - 1.15 (For GPU version, please see https://www.tensorflow.org/install/gpu to install cuda related packages)</p></li>
 <li><p><a href="https://www.nltk.org/">Natural Language Toolkit (NLTK)</a></p></li>
 <li><p>Natural Language Toolkit (NLTK) punkt package</p></li>   
 <li><p><a href="https://spacy.io/">spaCy</a></p></li>
