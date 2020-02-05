@@ -135,8 +135,17 @@ python -V
    </p>
    </li>   
    <li><p>For Linux OS</p>
+       <p>
+      if you have GPU on your machine and have NVIDIA and CUDA toolkits installed, run script under project root directory:</p>
+     <p>  
+        
+```
+bash installation-gpu.sh
+```
+
+ </p> 
    <p>
-      if you have the permission for sudo, run script under project root directory:</p>
+      Otherwise run script under project root directory to install tensorflow-CPU version:</p>
      <p>  
         
 ```
@@ -144,6 +153,7 @@ bash installation.sh
 ```
 
  </p> 
+
  <p>
 Otherwise install the required packages listed same as Windows OS.
  </p>      
