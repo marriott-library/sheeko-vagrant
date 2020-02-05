@@ -4,7 +4,7 @@ sudo apt-get -y install python
 sudo apt-get -y install python-tk
 sudo apt-get -y --upgrade install python-pip
 pip install --upgrade pip 
-sudo pip install --no-cache-dir tensorflow-gpu==1.15
+sudo pip install --no-cache-dir tensorflow-cpu==1.15
 sudo pip install --user Cython
 sudo pip install --user contextlib2
 sudo pip install --no-cache-dir spaCy
