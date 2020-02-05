@@ -13,4 +13,5 @@ sudo pip install python-resize-image
 sudo pip install --upgrade virtualenv
 sudo pip uninstall -y singledispatch
 sudo pip install -U nltk
+sudo pip install -U matplotlib
 python -c 'import nltk; nltk.download("punkt")'
