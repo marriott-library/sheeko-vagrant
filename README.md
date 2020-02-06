@@ -193,7 +193,7 @@ vagrant ssh
 ```
 python -c 'import tensorflow as tf; print(tf.__version__)'
 ```
-Version of the tensorflow will be printed as result if successfully installed
+Version of the tensorflow (CPU 1.15) will be printed as result if successfully installed
 ```
 python -c 'import nltk; print(nltk.__version__)'
 ```
