@@ -950,7 +950,7 @@ Classification model translates given JPEG image into single label out of [1000 
 You could find more information about [image classification models](https://github.com/tensorflow/models/tree/master/research/inception)
 
 ### Object Detection
-Object Detection model identifies the objects in the given JPEG image. You could find models in [models_zoos] (https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) provided by tensorflow and [dictionaries](https://github.com/tensorflow/models/tree/master/research/object_detection/data)
+Object Detection model identifies the objects in the given JPEG image. You could find models in [models_zoos](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) provided by tensorflow and [dictionaries](https://github.com/tensorflow/models/tree/master/research/object_detection/data)
 
 Please see [Inference Walkthrough](#Inference-Walkthrough) for code walkthrough
 
