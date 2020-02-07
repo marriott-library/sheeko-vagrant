@@ -12,6 +12,8 @@ Machine learning implementation package to generate descriptive metadata for dig
     * [Test Installation](#Test-Installation)
 * [How to Use](#How-to-Use)
 * [Walkthrough](#Walkthrough)
+    * [Inference Walkthrough](#Inference-Walkthrough)
+    * [Training Walkthrough](#Train-your-own-model-Walkthrough)
 * [Prepare you Data](#Data-Preparation)
     * [Clean your data](#Clean-Data)
     * [Build your data](#Build-Data)
