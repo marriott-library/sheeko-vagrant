@@ -244,16 +244,16 @@ TRAIN_PERCENT = 80
 ### OS Compatibility
 
 #### Script Adjust
-If you plan to run the script under **Windows OS**, path format with "\\". 
+If you plan to run the script under **Windows OS**, path format with "\\\\". 
 
-e.g. CHECKPOINT_PATH = "path\\to\\dir\\pretrained_model\\graph.pb"
+e.g. CHECKPOINT_PATH = "path\\\\to\\\\dir\\\\pretrained_model\\\\graph.pb"
 
 
 If **Linux OS**, path format with "/". 
 
 e.g. CHECKPOINT_PATH = "path/to/dir/pretrained_model/graph.pb"
 
-You could easily switch between Linux OS and Windows OS by replacing "\\" with "/" or replacing "/" with "\\" .
+You could easily switch between Linux OS and Windows OS by replacing "\\\\" with "/" or replacing "/" with "\\\\" .
 
 #### Model Adjust
 **When using a model, check the checkpoint file:**
@@ -261,7 +261,7 @@ Here's an example:
 model_checkpoint_path: "/vagrant/models/caption/train/model.ckpt-20"
 
 If you're planning to migrate this model, make sure you adjust the path correctly to prevent the "Not Found" error.
-If you're running the code under Windows OS, you need to adjust the path by changing / with \\.
+If you're running the code under Windows OS, you need to adjust the path by changing / with \\\\.
 
 #### Data Adjust
 **When you run build_data_run.py:** 
